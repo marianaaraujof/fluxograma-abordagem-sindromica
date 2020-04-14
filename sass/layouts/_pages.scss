@@ -1,14 +1,47 @@
+.container h3 {
+    font-size: 1.15em;
+    max-width: 70%;
+}
 .fluxograma {
     display: flex;
     flex-direction: column;
     align-items: center;  
 }
+
 button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1em;
     border-radius: 2em;
-    background-color: #70BADA;
+    background-color: #e74c3c;
+    color: white;
     border: 0;
     margin: 0;
+
+    &.profissionais {
+        padding: 40px;
+        width: 750px;
+
+        .title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h4 {
+                font-size: 1em;
+            }
+        }
+        a {
+            font-size: 1em;
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
 }
 .coluna{
     display: flex;
@@ -32,27 +65,34 @@ button {
     align-items: center;
 }
 .linha-2 {
-    width: 80%;
+    width: 65%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between; 
 }
 .exp {
-    border: 2px solid #70BADA;
+    border: 2px solid #e74c3c;
     border-radius: 2em;
     background: white;
     padding: 1em;
-    font-size: 0.7em;
+    font-size: 0.85em;
 }
 
+.casos {
+    width: 75%;
+    .exp {
+        width: 400px;
+        margin: .5em;
+    }
+}
 
 .arrow-up {
     width: 0; 
     height: 0; 
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-bottom: 5px solid #70BADA;
+    border-bottom: 5px solid #e74c3c;
 }
 
 .arrow-down {
@@ -60,7 +100,7 @@ width: 0;
 height: 0; 
 border-left: 20px solid transparent;
 border-right: 20px solid transparent;
-border-top: 20px solid #70BADA;
+border-top: 20px solid #e74c3c;
 }
 
 .arrow-right {
@@ -68,7 +108,7 @@ width: 0;
 height: 0; 
 border-top: 20px solid transparent;
 border-bottom: 20px solid transparent;
-border-left: 20px solid #70BADA;
+border-left: 20px solid #e74c3c;
 }
 
 .arrow-left {
@@ -76,6 +116,6 @@ width: 0;
 height: 0; 
 border-top: 20px solid transparent;
 border-bottom: 20px solid transparent; 
-border-right:20px solid #70BADA; 
+border-right:20px solid #e74c3c; 
 }
 
