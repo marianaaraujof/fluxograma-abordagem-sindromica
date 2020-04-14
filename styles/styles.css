@@ -94,6 +94,9 @@ button.profissionais a {
   flex-direction: column;
   align-items: flex-end;
 }
+.coluna:hover {
+  opacity: 0.9;
+}
 
 .linha {
   display: flex;

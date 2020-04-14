@@ -67,6 +67,9 @@ button {
         flex-direction: column;
         align-items: flex-end;
     }
+    &:hover {
+        opacity: 0.9;
+    }
 }
 
 .linha {
