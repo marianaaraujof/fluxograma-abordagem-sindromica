@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 90px;
+  height: 2200px;
 }
 
 button {
@@ -80,7 +80,7 @@ button.profissionais a {
 }
 
 .linha-2 {
-  width: 65%;
+  width: 55%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -133,6 +133,18 @@ button.profissionais a {
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-right: 20px solid #e74c3c;
+}
+
+.container-referencias {
+  padding: 2em;
+}
+.container-referencias h3 {
+  font-size: 1.15em;
+  border-bottom: 2px solid #e74c3c;
+  width: 8em;
+}
+.container-referencias h4 {
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */

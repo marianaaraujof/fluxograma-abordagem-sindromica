@@ -15,6 +15,7 @@ $(document).ready(function(){
   $("#p14").hide();
   $("#p15").hide();
   $("#p16").hide();
+  //$("#p17").hide();
 
   $("#pinicial").click(function(){
     $("#p1").fadeIn(300, function(){
@@ -31,12 +32,26 @@ $(document).ready(function(){
 
   $("#p4").click(function(){
     $("#p5").fadeIn(300, function(){
+      $("#p7").fadeOut(200);
       $("#p8").fadeIn(400);
     });
   });
 
   $("#p6").click(function(){
-    $("#p7").fadeIn(200);
+    $("#p7").fadeIn(200, function(){
+      $("#p8").fadeOut(400);
+      $("#p5").fadeOut(400);
+      $("#p9").fadeOut(400);
+      $("#p10").fadeOut(400);
+      $("#p11").fadeOut(400);
+      $("#p12").fadeOut(400);
+      $("#p13").fadeOut(400);
+      $("#p14").fadeOut(400);
+      $("#p15").fadeOut(400);
+      $("#p16").fadeOut(400);
+    });
+    
+
   });
 
   $("#p8").click(function(){
@@ -61,7 +76,27 @@ $(document).ready(function(){
   $("#p12").click(function(){
     $("#p15").fadeIn(300, function(){
       $("#p16").fadeIn(200);
+     // $("#p17").fadeIn(200);
     });
   });
+
+  $("#p17").click(function(){
+    $("#p1").show();
+    $("#p2").show();
+    $("#p3").show();
+    $("#p4").show();
+    $("#p5").show();
+    $("#p6").show();
+    $("#p7").show();
+    $("#p8").show();
+    $("#p9").show();
+    $("#p10").show();
+    $("#p11").show();
+    $("#p12").show();
+    $("#p13").show();
+    $("#p14").show();
+    $("#p15").show();
+    $("#p16").show();
+  })
 
 });
