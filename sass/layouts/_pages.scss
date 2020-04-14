@@ -90,6 +90,10 @@ button {
     background: white;
     padding: 1em;
     font-size: 0.85em;
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .casos {
@@ -100,30 +104,36 @@ button {
     }
 }
 
-.arrow-up {
+.arrow-down {
     width: 0; 
     height: 0; 
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid #e74c3c;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #e74c3c;
 }
 
-.arrow-down {
+.arrow-down-white {
 width: 0; 
 height: 0; 
 border-left: 20px solid transparent;
 border-right: 20px solid transparent;
 border-top: 20px solid #e74c3c;
+position: relative;
+    &:after {
+        border-left: solid transparent 18px;
+        border-right: solid transparent 18px;
+        border-top: solid white 18px;
+        bottom: 4px;
+        content: " ";
+        height: 0;
+        left: 50%;
+        margin-left: -19px;
+        position: absolute;
+        width: 0;
+    }
 }
 
-.arrow-down-white {
-    width: 0; 
-    height: 0; 
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid white;
-    z-index: 10;
-}
+
 
 .arrow-right {
 width: 0; 

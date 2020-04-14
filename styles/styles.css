@@ -119,6 +119,9 @@ button.profissionais a {
   padding: 1em;
   font-size: 0.85em;
 }
+.exp:hover {
+  opacity: 1;
+}
 
 .casos {
   width: 75%;
@@ -126,14 +129,6 @@ button.profissionais a {
 .casos .exp {
   width: 35em;
   margin: 0.5em;
-}
-
-.arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #e74c3c;
 }
 
 .arrow-down {
@@ -147,10 +142,22 @@ button.profissionais a {
 .arrow-down-white {
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid white;
-  z-index: 10;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #e74c3c;
+  position: relative;
+}
+.arrow-down-white:after {
+  border-left: solid transparent 18px;
+  border-right: solid transparent 18px;
+  border-top: solid white 18px;
+  bottom: 4px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -19px;
+  position: absolute;
+  width: 0;
 }
 
 .arrow-right {
