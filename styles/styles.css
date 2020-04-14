@@ -9,6 +9,20 @@
   padding: 0;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+footer div img {
+  height: 40px;
+}
+
 .container h3 {
   font-size: 1.15em;
   max-width: 70%;
@@ -31,6 +45,9 @@ button {
   color: white;
   border: 0;
   margin: 0;
+}
+button:hover:not(.acs) {
+  transform: translateY(4px);
 }
 button:focus {
   outline: none;
@@ -136,7 +153,8 @@ button.profissionais a {
 }
 
 .container-referencias {
-  padding: 2em;
+  padding: 0 6em;
+  margin: 0 30px auto;
 }
 .container-referencias h3 {
   font-size: 1.15em;

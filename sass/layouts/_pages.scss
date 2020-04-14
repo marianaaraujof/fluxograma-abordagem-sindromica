@@ -20,6 +20,10 @@ button {
     color: white;
     border: 0;
     margin: 0;
+
+    &:hover:not(.acs) {
+        transform: translateY(4px);
+    }
     
     &:focus {
         outline: none;
@@ -126,7 +130,8 @@ border-right:20px solid #e74c3c;
 }
 
 .container-referencias {
-    padding: 2em;
+    padding: 0 6em;
+    margin: 0 30px auto;
     h3 {
         font-size: 1.15em;
         border-bottom: 2px solid #e74c3c;
