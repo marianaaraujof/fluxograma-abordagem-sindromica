@@ -18,6 +18,10 @@ button {
     color: white;
     border: 0;
     margin: 0;
+    
+    &:focus {
+        outline: none;
+    }
 
     &.profissionais {
         padding: 40px;
