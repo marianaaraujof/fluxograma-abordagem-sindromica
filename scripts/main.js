@@ -1,34 +1,67 @@
+$(document).ready(function(){
+  $("#p1").hide();
+  $("#p2").hide();
+  $("#p3").hide();
+  $("#p4").hide();
+  $("#p5").hide();
+  $("#p6").hide();
+  $("#p7").hide();
+  $("#p8").hide();
+  $("#p9").hide();
+  $("#p10").hide();
+  $("#p11").hide();
+  $("#p12").hide();
+  $("#p13").hide();
+  $("#p14").hide();
+  $("#p15").hide();
+  $("#p16").hide();
 
-flowSVG.draw(SVG('drawing').size(600, 800));
-flowSVG.config({
-    interactive:true,
-    showButtons:true,
-    connectorLength: 60,
-    scrollto:false
+  $("#pinicial").click(function(){
+    $("#p1").fadeIn(300, function(){
+      $("#p2").fadeIn(200);
+    });
+  });
+
+  $("#p2").click(function(){
+    $("#p3").fadeIn(300, function(){
+      $("#p4").fadeIn(200);
+      $("#p6").fadeIn(200);
+    });
+  });
+
+  $("#p4").click(function(){
+    $("#p5").fadeIn(300, function(){
+      $("#p8").fadeIn(400);
+    });
+  });
+
+  $("#p6").click(function(){
+    $("#p7").fadeIn(200);
+  });
+
+  $("#p8").click(function(){
+    $("#p9").fadeIn(200);
+  });
+
+  $("#p9").click(function(){
+    $("#p10").fadeIn(200);
+  });
+
+  $("#p10").click(function(){
+    $("#p11").fadeIn(200);
+    $("#p12").fadeIn(200);
+  });
+
+  $("#p11").click(function(){
+    $("#p13").fadeIn(300, function(){
+      $("#p14").fadeIn(200);
+    });
+  });
+
+  $("#p12").click(function(){
+    $("#p15").fadeIn(300, function(){
+      $("#p16").fadeIn(200);
+    });
+  });
+
 });
-flowSVG.shapes(
-  [{
-    label:'procuraUBS',
-    type:'process',
-    text: [
-      'Paciente procura UBS'
-    ],
-    next: 'entradaUBS'
-  },
-  {
-      label: 'entradaUBS',
-      type: 'process',
-      text: [
-        'UBS como porta de entrada resolutiva, de identificação precoce e encaminhamento correto de casos graves.',
-        'Pacientes com prioridade no atendimento: pessoas acima de 60 anos, pacientes com doenças crônicas e/ou imunossuprimidos,',
-        'gestantes e puérperas até 45 dias após o parto.'
-    ],
-    next: 'PrimeiroContato'
-  },
-  {
-      label: 'PrimeiroContato',
-      type: 'process',
-      text: 'Primeiro Contato',
-      next: 'acs'
-  }
-]);

@@ -17,19 +17,19 @@
         <h3> <b>Objetivo: </b>Agilizar o atendimento de casos de Síndrome Gripal na APS, incluindo os casos de COVID-19, priorizando pacientes em risco de infecção, principalmente idosos acima de 60 anos, e evitar o contágio local com outros pacientes.</h3>
     </div>
     <div class="fluxograma">
-       <div class="coluna">
+       <div id="pinicial" class="coluna">
             <button>Paciente procura UBS</button>
             <div class="arrow-down"></div>
         </div>
-        <div class="coluna" style="width: 30vw;">
+        <div id="p1" class="coluna" style="width: 30vw;">
             <div class="exp">UBS como porta de entrada resolutiva, de identificação precoce e encaminhamento correto de casos graves. Pacientes com prioridade no atendimento: pessoas acima de 60 anos, pacientes com doenças crônicas e/ou imunossuprimidos, gestantes e puérperas até 45 dias após o parto.</div>
             <div class="arrow-down"></div>
         </div>
-        <div class="coluna">
+        <div id="p2" class="coluna">
             <button>Primeiro contato</button>
             <div class="arrow-down"></div>
         </div>
-        <div class="linha">
+        <div id="p3" class="linha">
             <div class="arrow-left"></div>
             <button class="profissionais">
                 <div class="title">ACS/RECEPCIONISTA</div>
@@ -45,8 +45,8 @@
         </div>
         <div class="linha-2">
             <div class="coluna-left">
-                <button>Sim</button>
-                <div class="coluna">
+                <button id="p4" >Sim</button>
+                <div id="p5" class="coluna">
                     <div class="exp">Colocar a pessoa em uma área separada ou sala específica visando ao isolamento respiratório. <br />
                         A sala deve ser mantida com a porta fechada, janelas abertas e ar-condicionado desligado. <br />
                         É mandatório o uso de máscara cirúrgica.</div>
@@ -54,11 +54,11 @@
                 </div>
             </div>
             <div class="coluna-right">
-                <button>Não</button>
-                <div class="exp">Acesso conforme fluxo normal da unidade.</div>
+                <button id="p6">Não</button>
+                <div id="p7" class="exp">Acesso conforme fluxo normal da unidade.</div>
             </div> 
         </div>
-        <div class="coluna">
+        <div id="p8" class="coluna">
             <button class="profissionais">   
                 <div class="title">Auxiliar ou técnico(a) de enfermagem</div>
                 <div class="content"><h4><u>CHECK-LIST:</u> </h4>
@@ -73,7 +73,7 @@
             </button>
             <div class="arrow-down"></div>
         </div>
-        <div class="coluna">
+        <div id="p9" class="coluna">
             <button class="profissionais">   
                 <div class="title">Enfermeiro(a)</div>
                 <div class="content"><h4><u>CHECK-LIST:</u> </h4>
@@ -88,7 +88,7 @@
             </button>
             <div class="arrow-down"></div>
         </div>
-        <div class="coluna">
+        <div id="p10" class="coluna">
             <button class="profissionais">   
                 <div class="title">Médico(a)</div>
                 <div class="content"><h4><u>CHECK-LIST:</u> </h4>
@@ -102,26 +102,26 @@
             <div class="arrow-down"></div>
         </div>
         <div class="linha-2">
-            <button>Caso leve?</button>
-            <button>Caso grave?</button>
+            <button id="p11">Caso leve?</button>
+            <button id="p12">Caso grave?</button>
         </div>
         <div class="linha-2 casos">
             <div class="coluna-left">
-                <div class="exp">APS | ESF<br />
+                <div id="p13" class="exp">APS | ESF<br />
                     Síndrome gripal com sintomas leves (sem dispneia ou sinais de gravidade).<br />
                     <b>E</b><br />
                     Ausência de comorbidades que contraindicam isolamento domiciliar / sinais de gravidade.<br />
                 </div>
-                <div class="exp"><b>O que fazer:</b> Manejo clínico, orientações de isolamento domiciliar e monitoramento de 48/48 horas presencial ou, preferencialmente, por telefone de acordo com necessidade clínica. Se familiares desenvolverem sintomas, orientá-los a procurar atendimento. Se possível, já munidos de máscaras. Fornecer atestado (se necessário) para paciente e contatos domiciliares por 14 dias a contar do início dos sintomas.</div>
+                <div id="p14" class="exp"><b>O que fazer:</b> Manejo clínico, orientações de isolamento domiciliar e monitoramento de 48/48 horas presencial ou, preferencialmente, por telefone de acordo com necessidade clínica. Se familiares desenvolverem sintomas, orientá-los a procurar atendimento. Se possível, já munidos de máscaras. Fornecer atestado (se necessário) para paciente e contatos domiciliares por 14 dias a contar do início dos sintomas.</div>
             </div>
             <div class="coluna-right">
-                <div class="exp">
+                <div id="p15" class="exp">
                     CENTRO DE REFERÊNCIA/ATENÇÃO ESPECIALIZADA <br />
                     Síndrome gripal que apresente dispneia ou os sinais de gravidade (saturação < 95%, taquipneia, hipotensão, piora nas condições clínicas basais, alteração do estado mental, entre outras – consultar protocolo clínico).<br />
                     <b>OU</b> <br />
                     Comorbidades que contraindicam isolamento domiciliar (doença cardíaca crônica descompensada, doenças respiratórias crônicas descompensadas, doenças renais, imunossuprimidos, doenças cromossômicas, entre outros – consultar protocolo clínico.
                 </div>
-                <div class="exp">
+                <div id="p16" class="exp">
                     <b>O que fazer:</b> Estabilização e encaminhamento para centro de referência por transporte apropriado.
                 </div>
             </div>
@@ -134,8 +134,6 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="scripts/jquery.scrollTo.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/1.0.1/svg.min.js"></script>
-    <script src="scripts/flowsvg.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
