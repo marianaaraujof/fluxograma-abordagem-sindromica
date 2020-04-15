@@ -135,6 +135,9 @@ button.profissionais a:hover {
   align-items: flex-start;
   max-width: 70%;
 }
+.linha .exp {
+  margin: 0;
+}
 .linha div {
   display: flex;
   flex-direction: column;
