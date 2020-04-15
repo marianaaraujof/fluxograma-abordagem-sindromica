@@ -14,82 +14,91 @@
     </header>
     <div class="container">
         <h3> <b>Alvo:</b> Todos os serviços de APS/ESF </h3>
-        <h3> <b>Objetivo: </b>Agilizar o atendimento de casos de Síndrome Gripal na APS, incluindo os casos de COVID-19, priorizando pacientes em risco de infecção, principalmente idosos acima de 60 anos, e evitar o contágio local com outros pacientes.</h3>
+        <h3> <b>Objetivo: </b>Agilizar o atendimento de casos de Síndrome Gripal na APS,
+            incluindo os casos de COVID-19, priorizando pacientes em risco de infecção,
+            principalmente idosos acima de 60 anos, e evitar o contágio local com outros pacientes.</h3>
     </div>
     <div class="fluxograma">
        <div id="pinicial" class="coluna">
             <button>Paciente procura UBS</button>
             <div class="arrow-down"></div>
         </div>
-        <div id="p1" class="coluna" style="width: 30vw;">
-            <div class="exp">UBS como porta de entrada resolutiva, de identificação precoce e encaminhamento correto de casos graves. Pacientes com prioridade no atendimento: pessoas acima de 60 anos, pacientes com doenças crônicas e/ou imunossuprimidos, gestantes e puérperas até 45 dias após o parto.</div>
+        <div id="p1" class="coluna">
+            <div class="exp">UBS como porta de entrada resolutiva, de identificação precoce 
+                e encaminhamento correto de casos graves. Pacientes com prioridade no atendimento: pessoas acima de 60 anos, 
+                pacientes com doenças crônicas e/ou imunossuprimidos, gestantes e puérperas até 45 dias após o parto.</div>
             <div class="arrow-down-white"></div>
         </div>
-        <div id="p2" class="coluna">
+        <div id="p-contato" class="coluna">
             <button>Primeiro contato</button>
             <div class="arrow-down"></div>
         </div>
-        <div id="p3" class="linha">
+        <div id="acs-b">
             <button class="profissionais acs">
-                <div class="title">ACS/RECEPCIONISTA</div>
+                <div class="title">ACS/RECEPCIONISTA</div><br />
                 <div class="content"><h4><u>CHECK-LIST:</u> </h4>
                     <h4>1.Seguir formulário ACS.</h4>
-                    <h4>2.Questionar sobre queixas de síndrome respiratória. Sintomas respiratórios <br /></h4>
-                    <h4>(tosse, dor de garganta, desconforto ou esforço respiratório) com ou sem febre.</h4>
+                    <h4>2.Questionar sobre queixas de síndrome respiratória. Sintomas respiratórios
+                    (tosse, dor de garganta, desconforto ou esforço respiratório) com ou sem febre.</h4>
                 </div>
                 <br />
                 <a href="formularios/ACS_recep.pdf" target="_blank">DOWNLOAD: Formulário Agente Comunitário de Saúde/Recepcionista </a>
             </button>
         </div>
-        <div class="linha-2">
-            <div class="coluna-left">
-                <button id="p4" >Sim</button>
-                <div id="p5" class="coluna">
-                    <div class="exp">Colocar a pessoa em uma área separada ou sala específica visando ao isolamento respiratório. <br />
-                        A sala deve ser mantida com a porta fechada, janelas abertas e ar-condicionado desligado. <br />
-                        É mandatório o uso de máscara cirúrgica.</div>
-                    <div class="arrow-down-white"></div>
-                </div>
+        <div class="linha">
+            <div>
+                <button id="sim">Sim</button>
+                <div id="seta-sim" class="arrow-down"></div>
             </div>
-            <div class="coluna-right">
-                <button id="p6">Não</button>
-                <div id="p7" class="exp">Acesso conforme fluxo normal da unidade.</div>
-            </div> 
+            <div id="perg-sint" class="exp"><b>Tem sintomas de síndrome gripal? </b></div>
+            <div>
+                <button id="nao">Não</button>
+                <div id="seta-nao" class="arrow-down"></div>
+            </div>
         </div>
-        <div id="p8" class="coluna">
+        <div class="linha-exp">
+            <div id="cont-sim" class="coluna">
+                <div class="exp">Colocar a pessoa em uma área separada ou sala específica visando ao isolamento respiratório.
+                    A sala deve ser mantida com a porta fechada, janelas abertas e ar-condicionado desligado. 
+                    É mandatório o uso de máscara cirúrgica.</div>
+                <div class="arrow-down-white"></div>
+            </div>
+            <div id="cont-nao" class="exp">Acesso conforme fluxo normal da unidade.</div> 
+        </div>
+        <div id="tec-enf-b" class="coluna">
             <button class="profissionais">   
-                <div class="title">Auxiliar ou técnico(a) de enfermagem</div>
+                <div class="title">Auxiliar ou técnico(a) de enfermagem</div><br />
                 <div class="content"><h4><u>CHECK-LIST:</u> </h4>
                     <h4>1.Seguir formulário do(a) técnico(a) de enfermagem.</h4>
-                    <h4>2. Atentar nos sintomas respiratórios graves ou outro sinal e sintoma preocupante.</h4>
-                    <h4> Nesse caso, acione imediatamente enfermeiro(a) e/ou médico(a).</h4>
-                    <h4>Caso contrário, mantenha a pessoa com máscara cirúrgica</h4>
-                    <h4> e direcione para o atendimento do(a) enfermeiro(a).</h4>
+                    <h4>2. Atentar nos sintomas respiratórios graves ou outro sinal e sintoma preocupante.
+                     Nesse caso, acione imediatamente enfermeiro(a) e/ou médico(a).
+                    Caso contrário, mantenha a pessoa com máscara cirúrgica
+                    e direcione para o atendimento do(a) enfermeiro(a).</h4>
                 </div>
                 <br />
                 <a href="formularios/tec_enf.pdf" target="_blank">DOWNLOAD: Formulário Técnico(a) de enfermagem</a>
             </button>
             <div class="arrow-down"></div>
         </div>
-        <div id="p9" class="coluna">
+        <div id="enf-b" class="coluna">
             <button class="profissionais">   
-                <div class="title">Enfermeiro(a)</div>
+                <div class="title">Enfermeiro(a)</div><br />
                 <div class="content"><h4><u>CHECK-LIST:</u> </h4>
                     <h4>1.Seguir formulário do(a) enfermeiro(a).</h4>
                     <h4>2. Notificar imediatamente via formulário pelo link http://bit.ly/notificaCOVID19.</h4>
-                    <h4>3. Caso a pessoa apresente sintomas respiratórios graves ou outro sinal e sintoma </h4>
-                    <h4>preocupante, acione imediatamente o(a) médico(a). Caso contrário, mantenha a pessoa</h4>
-                    <h4>com máscara cirúrgica e direcione para o atendimento do(a) médico(a).</h4>
+                    <h4>3. Caso a pessoa apresente sintomas respiratórios graves ou outro sinal e sintoma 
+                    preocupante, acione imediatamente o(a) médico(a). Caso contrário, mantenha a pessoa
+                    com máscara cirúrgica e direcione para o atendimento do(a) médico(a).</h4>
                 </div>
                 <br />
                 <a href="formularios/Enfermeiro.pdf" target="_blank">DOWNLOAD: Formulário enfermeiro(a)</a>
             </button>
             <div class="arrow-down"></div>
         </div>
-        <div id="p10" class="coluna">
+        <div id="med-b" class="coluna">
             <button class="profissionais">   
-                <div class="title">Médico(a)</div>
-                <div class="content"><h4><u>CHECK-LIST:</u> </h4>
+                <div class="title">Médico(a)</div> <br />
+                <div class="content"><h4><u>CHECK-LIST:</u></h4>
                     <h4>1.Seguir formulário do(a) médico(a).</h4>
                     <h4>2. Classificação de gravidade.</h4>
                     <h4>3. Verificar comorbidades que contraindicam manejo na APS (ver protocolo clínico na APS).</h4>
@@ -100,12 +109,13 @@
             <div class="arrow-down"></div>
         </div>
         <div class="linha-2">
-            <button id="p11">Caso leve?</button>
-            <button id="p12">Caso grave?</button>
+            <button id="leve">Caso leve?</button>
+            <button id="grave">Caso grave?</button>
         </div>
         <div class="linha-2 casos">
             <div class="coluna-left">
-                <div id="p13" class="exp">APS | ESF<br />
+                <div id="p13" class="exp"><b>CASO LEVE</b><br />
+                    APS | ESF<br />
                     Síndrome gripal com sintomas leves (sem dispneia ou sinais de gravidade).<br />
                     <b>E</b><br />
                     Ausência de comorbidades que contraindicam isolamento domiciliar / sinais de gravidade.<br />
@@ -113,7 +123,7 @@
                 <div id="p14" class="exp"><b>O que fazer:</b> Manejo clínico, orientações de isolamento domiciliar e monitoramento de 48/48 horas presencial ou, preferencialmente, por telefone de acordo com necessidade clínica. Se familiares desenvolverem sintomas, orientá-los a procurar atendimento. Se possível, já munidos de máscaras. Fornecer atestado (se necessário) para paciente e contatos domiciliares por 14 dias a contar do início dos sintomas.</div>
             </div>
             <div class="coluna-right">
-                <div id="p15" class="exp">
+                <div id="p15" class="exp"><b>CASO GRAVE</b><br />
                     CENTRO DE REFERÊNCIA/ATENÇÃO ESPECIALIZADA <br />
                     Síndrome gripal que apresente dispneia ou os sinais de gravidade (saturação < 95%, taquipneia, hipotensão, piora nas condições clínicas basais, alteração do estado mental, entre outras – consultar protocolo clínico).<br />
                     <b>OU</b> <br />
@@ -125,10 +135,10 @@
             </div>
         </div>
     </div>
-    <button id="p17" style="margin: 2em 8em">Mostrar completo</button>
+    <button id="show-all">Mostrar completo</button>
 
     <div class="container-referencias">
-        <h3>REFERÊNCIAS</h3>
+        <h3>REFERÊNCIA</h3>
         <h4>Fonte dos dados: BRASIL. Ministério da Saúde. <b>Protocolo de manejo clínico do CORONAVÍRUS (COVID-19) na atenção primária à saúde.</b> Brasília: Ministério da Saúde, 2020. Disponível em: http://189.28.128.100/dab/docs/portaldab/documentos/20200330_ProtocoloManejo_ver06_Final.pdf. Acesso em: 8 abr. 2020.</h4>
     </div>
 
@@ -138,12 +148,15 @@
             <img src="images/avasus.png" alt="avasus">
         </div>
         <div>
-            <img src="images/ufrn.jpeg" alt="ufrn">
             <img src="images/lais.jpeg" alt="lais">
             <img src="images/sedis.jpeg" alt="sedis">
+            <img src="images/ufrn.jpeg" alt="ufrn">
         </div>
     </footer>
 
+
+
+    
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="scripts/jquery.scrollTo.min.js"></script>

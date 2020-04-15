@@ -1,50 +1,57 @@
 $(document).ready(function(){
   $("#p1").hide();
-  $("#p2").hide();
-  $("#p3").hide();
-  $("#p4").hide();
-  $("#p5").hide();
-  $("#p6").hide();
-  $("#p7").hide();
-  $("#p8").hide();
-  $("#p9").hide();
-  $("#p10").hide();
-  $("#p11").hide();
-  $("#p12").hide();
+  $("#p-contato").hide();
+  $("#acs-b").hide();
+  $("#sim").hide();
+  $("#cont-sim").hide();
+  $("#nao").hide();
+  $("#cont-nao").hide();
+  $("#tec-enf-b").hide();
+  $("#enf-b").hide();
+  $("#med-b").hide();
+  $("#leve").hide();
+  $("#grave").hide();
   $("#p13").hide();
   $("#p14").hide();
   $("#p15").hide();
   $("#p16").hide();
-  //$("#p17").hide();
+  $("#perg-sint").hide();
+  $("#seta-sim").hide();
+  $("#seta-nao").hide();
 
   $("#pinicial").click(function(){
     $("#p1").fadeIn(300, function(){
-      $("#p2").fadeIn(200);
+      $("#p-contato").fadeIn(200);
     });
   });
 
-  $("#p2").click(function(){
-    $("#p3").fadeIn(300, function(){
-      $("#p4").fadeIn(200);
-      $("#p6").fadeIn(200);
+  $("#p-contato").click(function(){
+    $("#acs-b").fadeIn(300, function(){
+      $("#perg-sint").fadeIn(200);
+      $("#sim").fadeIn(200);
+      $("#nao").fadeIn(200);
     });
   });
 
-  $("#p4").click(function(){
-    $("#p5").fadeIn(300, function(){
-      $("#p7").fadeOut(200);
-      $("#p8").fadeIn(400);
+  $("#sim").click(function(){
+    $("#seta-nao").hide();
+    $("#seta-sim").show();
+    $("#cont-sim").fadeIn(300, function(){
+      $("#cont-nao").fadeOut(200);
+      $("#tec-enf-b").fadeIn(400);
     });
   });
 
-  $("#p6").click(function(){
-    $("#p7").fadeIn(200, function(){
-      $("#p8").fadeOut(400);
-      $("#p5").fadeOut(400);
-      $("#p9").fadeOut(400);
-      $("#p10").fadeOut(400);
-      $("#p11").fadeOut(400);
-      $("#p12").fadeOut(400);
+  $("#nao").click(function(){
+    $("#seta-sim").hide();
+    $("#seta-nao").show();
+    $("#cont-nao").fadeIn(200, function(){
+      $("#tec-enf-b").fadeOut(400);
+      $("#cont-sim").fadeOut(400);
+      $("#enf-b").fadeOut(400);
+      $("#med-b").fadeOut(400);
+      $("#leve").fadeOut(400);
+      $("#grave").fadeOut(400);
       $("#p13").fadeOut(400);
       $("#p14").fadeOut(400);
       $("#p15").fadeOut(400);
@@ -54,45 +61,48 @@ $(document).ready(function(){
 
   });
 
-  $("#p8").click(function(){
-    $("#p9").fadeIn(200);
+  $("#tec-enf-b").click(function(){
+    $("#enf-b").fadeIn(200);
   });
 
-  $("#p9").click(function(){
-    $("#p10").fadeIn(200);
+  $("#enf-b").click(function(){
+    $("#med-b").fadeIn(200);
   });
 
-  $("#p10").click(function(){
-    $("#p11").fadeIn(200);
-    $("#p12").fadeIn(200);
+  $("#med-b").click(function(){
+    $("#leve").fadeIn(200);
+    $("#grave").fadeIn(200);
   });
 
-  $("#p11").click(function(){
+  $("#leve").click(function(){
     $("#p13").fadeIn(300, function(){
       $("#p14").fadeIn(200);
     });
   });
 
-  $("#p12").click(function(){
+  $("#grave").click(function(){
     $("#p15").fadeIn(300, function(){
       $("#p16").fadeIn(200);
-     // $("#p17").fadeIn(200);
+
     });
   });
 
-  $("#p17").click(function(){
+  $("#show-all").click(function(){
     $("#p1").show();
-    $("#p2").show();
-    $("#p3").show();
-    $("#p4").show();
-    $("#p5").show();
-    $("#p6").show();
-    $("#p7").show();
-    $("#p8").show();
-    $("#p9").show();
-    $("#p10").show();
-    $("#p11").show();
-    $("#p12").show();
+    $("#p-contato").show();
+    $("#acs-b").show();
+    $("#perg-sint").show();
+    $("#sim").show();
+    $("#cont-sim").show();
+    $("#nao").show();
+    $("#cont-nao").show();
+    $("#seta-sim").show();
+    $("#seta-nao").show();
+    $("#tec-enf-b").show();
+    $("#enf-b").show();
+    $("#med-b").show();
+    $("#leve").show();
+    $("#grave").show();
     $("#p13").show();
     $("#p14").show();
     $("#p15").show();

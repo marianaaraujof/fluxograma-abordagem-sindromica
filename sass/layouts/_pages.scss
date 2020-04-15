@@ -7,10 +7,11 @@
     flex-direction: column;
     align-items: center;  
    // margin-bottom: 90px;
-    height: 2200px;
+    height: 2600px;
 }
 
 button {
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +20,7 @@ button {
     background-color: #e74c3c;
     color: white;
     border: 0;
-    margin: 0;
+    
 
     &:hover:not(.acs) {
         transform: translateY(4px);
@@ -30,7 +31,7 @@ button {
     }
 
     &.profissionais {
-        padding: 40px;
+        padding: 2em;
         width: 750px;
 
         .title {
@@ -40,7 +41,8 @@ button {
         .content {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            flex-wrap: wrap;
+            align-items: stretch;
             h4 {
                 font-size: 1em;
             }
@@ -50,6 +52,10 @@ button {
             color: white;
             font-weight: bold;
             text-decoration: underline;
+
+            &:hover {
+                color: #5f5f5f;
+            }
         }
     }
 }
@@ -68,23 +74,55 @@ button {
         align-items: flex-end;
     }
     &:hover {
-        opacity: 0.9;
+        opacity: 0.96;
     }
+}
+#p1 {
+    width: 30vw;
 }
 
 .linha {
+    margin-top: 2em;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 70%;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+            margin: 0 2em;
+            padding: 1em 3em;
+        }
+    }
+    
+   
+}
+.linha-exp {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    #cont-sim {
+        justify-self: flex-start;
+        max-width: 50%;
+    }
+    #cont-nao {
+        max-width: 50%;
+    }
 }
 .linha-2 {
     width: 55%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between; 
+    justify-content: space-around; 
 }
 .exp {
+    margin-top: 2em;
     border: 2px solid #e74c3c;
     border-radius: 2em;
     background: white;
@@ -133,8 +171,6 @@ position: relative;
     }
 }
 
-
-
 .arrow-right {
 width: 0; 
 height: 0; 
@@ -150,7 +186,9 @@ border-top: 20px solid transparent;
 border-bottom: 20px solid transparent; 
 border-right:20px solid #e74c3c; 
 }
-
+#show-all {
+    margin: 2em 8em;
+}
 .container-referencias {
     padding: 0 6em;
     margin: 0 30px auto;
@@ -161,5 +199,77 @@ border-right:20px solid #e74c3c;
     }
     h4 {
         font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+.fluxograma {
+    height: 2700px;
+}
+#p1 {
+    width: 90%;
+}
+.linha {
+    max-width: 90%;
+    .exp {
+        margin-top: 0;
+    }
+    &-exp {
+        width: 90%;
+    }
+}
+.linha-2.casos {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    .coluna-left {
+        width: 100%;
+        .exp {
+            width: 100%;
+        }
+    }
+    .coluna-right {
+        width: 100%;
+        align-items: flex-start;
+        .exp {
+            width: 100%;
+        }
+    }
+}
+#show-all {
+    margin: 2em 3em;
+}
+.container-referencias {
+    padding: 0 2em;
+}
+}
+@media screen and (max-width: 375px) {
+    .container h3 {
+        max-width: 100%;
+    }
+    .fluxograma {
+        height: 3200px;
+    }
+    .coluna {
+        max-width: 100%;
+    }
+    button.profissionais {
+        width: 100%;
+        padding: 1em;
+    }
+    .linha div button {
+        margin: 0;
+        padding: .5em 2em;
+    }
+    .exp {
+        padding: 0.5em;
+    }
+    .linha-2 {
+        width: 90%;
+    }
+    .container-referencias {
+        padding: 0 1em;
+        font-size: 0.4em;
+        margin: 0;
     }
 }
