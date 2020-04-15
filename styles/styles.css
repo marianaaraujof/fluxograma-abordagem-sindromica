@@ -22,14 +22,20 @@ b {
 }
 
 .header {
-  padding: 40px 25px;
+  padding: 2em 0.5em;
   background-color: #e74c3c;
   margin-bottom: 40px;
+}
+.header .container {
+  margin: 0 auto;
+  width: 95%;
 }
 .header h1 {
   color: #fff;
   margin: 0;
   padding: 0;
+  font-size: 2rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 375px) {
@@ -90,7 +96,7 @@ footer div h4 {
 }
 .container h3 {
   font-size: 1.15em;
-  max-width: 70%;
+  max-width: 90%;
 }
 
 .fluxograma {
