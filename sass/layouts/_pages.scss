@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;  
    // margin-bottom: 90px;
+   //height: 4000px;
    min-height: 750px;
    padding-bottom: 150px;
 }
@@ -216,7 +217,8 @@ border-right:20px solid $cor1;
 
 @media screen and (max-width: 768px) {
 .fluxograma {
-    height: 2700px;
+   min-height: 4000px;
+    font-size: .8em;
 }
 #p1 {
     width: 90%;
@@ -252,7 +254,8 @@ border-right:20px solid $cor1;
     margin: 2em 3em;
 }
 .container-referencias {
-    padding: 0 2em;
+    padding: 0 1em;
+    font-size: 0.8em;
 }
 }
 @media screen and (max-width: 375px) {
