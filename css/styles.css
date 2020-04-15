@@ -117,15 +117,12 @@ button {
   width: 70%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  position: relative; }
+  align-items: flex-start; }
   .linha-exp #cont-sim {
     justify-self: flex-start;
     max-width: 50%; }
   .linha-exp #cont-nao {
-    max-width: 50%;
-    position: absolute;
-    right: 50px; }
+    max-width: 50%; }
 
 .linha-2 {
   width: 55%;
