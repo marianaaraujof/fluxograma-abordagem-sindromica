@@ -1,3 +1,6 @@
+
+
+
 .container h3 {
     font-size: 1.15em;
     max-width: 70%;
@@ -7,7 +10,8 @@
     flex-direction: column;
     align-items: center;  
    // margin-bottom: 90px;
-    height: 2600px;
+   min-height: 250px;
+   padding-bottom: 1000px;
 }
 
 button {
@@ -17,7 +21,7 @@ button {
     align-items: center;
     padding: 1em;
     border-radius: 2em;
-    background-color: #e74c3c;
+    background-color: $cor1;
     color: white;
     border: 0;
     
@@ -128,7 +132,7 @@ button {
 }
 .exp {
     margin-top: 2em;
-    border: 2px solid #e74c3c;
+    border: 2px solid $cor1;
     border-radius: 2em;
     background: white;
     padding: 1em;
@@ -152,7 +156,7 @@ button {
     height: 0; 
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 20px solid #e74c3c;
+    border-top: 20px solid $cor1;
 }
 
 .arrow-down-white {
@@ -160,7 +164,7 @@ width: 0;
 height: 0; 
 border-left: 20px solid transparent;
 border-right: 20px solid transparent;
-border-top: 20px solid #e74c3c;
+border-top: 20px solid $cor1;
 position: relative;
     &:after {
         border-left: solid transparent 18px;
@@ -181,7 +185,7 @@ width: 0;
 height: 0; 
 border-top: 20px solid transparent;
 border-bottom: 20px solid transparent;
-border-left: 20px solid #e74c3c;
+border-left: 20px solid $cor1;
 }
 
 .arrow-left {
@@ -189,7 +193,7 @@ width: 0;
 height: 0; 
 border-top: 20px solid transparent;
 border-bottom: 20px solid transparent; 
-border-right:20px solid #e74c3c; 
+border-right:20px solid $cor1; 
 }
 #show-all {
     margin: 2em 8em;
@@ -199,7 +203,7 @@ border-right:20px solid #e74c3c;
     margin: 0 30px auto;
     h3 {
         font-size: 1.15em;
-        border-bottom: 2px solid #e74c3c;
+        border-bottom: 2px solid $cor1;
         width: 8em;
     }
     h4 {
