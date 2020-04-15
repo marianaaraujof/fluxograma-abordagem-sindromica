@@ -106,12 +106,17 @@ button {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    position: relative;
+
+
     #cont-sim {
         justify-self: flex-start;
         max-width: 50%;
     }
     #cont-nao {
         max-width: 50%;
+        position: absolute;
+        right: 50px;
     }
 }
 .linha-2 {
